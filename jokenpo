@@ -1,0 +1,28 @@
+x = str(input('Sua jogada:'))
+
+
+import random
+escolhas = ['pedra', 'papel', 'tesoura']
+
+resultado = (f'{x}_{random.choice(escolhas)}')
+
+print(resultado)
+
+if resultado == 'pedra_tesoura':
+     print('player win')
+if resultado == 'pedra_papel':
+    print('CPU win')
+if resultado == 'pedra_pedra':
+     print('empate')
+if resultado == 'tesoura_tesoura':
+     print('empate')
+if resultado == 'tesoura_papel':
+     print('player win')
+if resultado == 'tesoura_pedra':
+    print('CPU win')
+if resultado == 'papel_tesoura':
+     print('CPU win')
+if resultado == 'papel_papel':
+     print ('empate')
+if resultado == 'papel_pedra': 
+     print ('player win')
